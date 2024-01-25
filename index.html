@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Journey</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#D4304C",
+              secondary: "#000000cc",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <header
@@ -43,17 +56,130 @@
       <div
         class="md: w-1/2 m-auto text-center text-neutral-200 py-10 md:20 lg:py-36"
       >
-        <h4 class="text-xl md: text-3xl italic">Explore the colorful world</h4>
-        <span></span>
+        <h4 class="text-4xl font-bold md: text-3xl italic">
+          Explore the colorful world
+        </h4>
+        <span
+          class="bg-primary h-[6px] w-[150px] inline-block rounded-lg"
+        ></span>
         <h1 class="text-2xl md: text-6xl font-bold my-5 lg:my-10">
           A WONDERFUL GIFT
         </h1>
         <button
-          class="mt-5 md:mt-12 py-4 px-6 bg-red-600 text-neutral-100 rounded-lg tracking-widest text-neutral-200 md:text-xl"
+          class="mt-5 md:mt-12 py-4 px-6 bg-primary text-neutral-100 rounded-lg tracking-widest text-neutral-200 md:text-xl"
         >
           Learn More
         </button>
       </div>
     </header>
+
+    <section class="w-2/3 mx-auto my-20">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold mb-5">UPCOMING EVENTS</h1>
+        <span
+          class="bg-primary h-[5px] w-[150px] inline-block rounded-lg"
+        ></span>
+      </div>
+      <div class="flex mt-5">
+        <div class="p-5 text-center">
+          <img
+            class="rounded-lg h-[350px] border-r-8 border-b-8"
+            src="./images/Adventure-world.png"
+            alt=""
+          />
+          <h2 class="text-3xl font-bold text-secondary">EVEREST CAMP TREK</h2>
+          <p class="text-secondary mt-4">
+            Some text will be go here.This is a section of writing.I like this
+            section.This is a img of a child.
+          </p>
+          <button class="text-primary uppercase leading-7">Learn More</button>
+        </div>
+        <div class="p-5 text-center">
+          <img
+            class="rounded-lg h-[350px] border-r-8 border-b-8"
+            src="./images/maiya.png"
+            alt=""
+          />
+          <h2 class="text-3xl font-bold text-secondary">WALKING HOLIDAYS</h2>
+          <p class="text-secondary mt-4">
+            Come text will be go here.This is a section of writing.I like this
+            section.This is a img of a child.
+          </p>
+          <button class="text-primary leading-7 uppercase">
+            Learn More >>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-[url('./images/father.jpg')] bg-no-repeat bg-fixed bg-cover bg-center bg-blend-multipy bg-blue-500"
+    >
+      <div class="p-44 flex">
+        <div class="w-1/2"></div>
+
+        <div class="w-1/2 text-white">
+          <h2 class="font-bold text-6xl">EXPLORE THE WORLD</h2>
+          <span
+            class="bg-primary h-[5px] w-[150px] inline-block rounded-lg"
+          ></span>
+          <p class="font-bold my-7">
+            This is anouthe section of image with content.I do it second time
+            and it help me for know abou flex and backgraund image.There are
+            some ruls in backgroun image and flex.Flex is better than float.
+          </p>
+          <button class="uppercase leading-7 bg-primary rounded-lg">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-16 py-5 w-9/12 mx-auto">
+      <div class="flex">
+        <div>
+          <h2 class="font-bold text-2xl">UPCOMING TOURS & DESTINATION</h2>
+          <span
+            class="bg-primary h-[5px] w-[150px] inline-block rounded-lg"
+          ></span>
+          <p class="mt-5 font-medium text-secondary">
+            Now i write about tour Lorem ipsum dolor sit amet consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Utsunt in culpa qui officia deserunt mollit
+          </p>
+          <button
+            class="uppercase uppercase leading-7 bg-primary rounded-lg text-white"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="p-2">
+          <img
+            class="h-[280px] object-cover mb-4"
+            src="./images/child.jpg"
+            alt=""
+          />
+          <img
+            class="h-[350px] object-cover mb-4"
+            src="./images/fisherman.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="p-2">
+          <img
+            class="h-[350px] object-cover mb-4"
+            src="./images/noshto pola.jpg"
+            alt=""
+          />
+          <img
+            class="h-[280px] object-cover mb-4"
+            src="./images/kam nai.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
